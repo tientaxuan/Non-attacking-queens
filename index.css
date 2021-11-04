@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  min-height: 100vh;
+  position: relative;
+  background: rgba(18, 18, 105, 0.699);
+  display: grid;
+  grid-template-columns: repeat(8, 65px);
+  grid-template-rows: repeat(8, 65px);
+  grid-gap: 12px;
+  justify-content: center;
+}
+.caro {
+  background: rgb(175, 152, 46);
+  text-align: center;
+}
+.btn {
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(180deg, #ff0080 0%, #ff0080 100%);
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.caro i {
+  vertical-align: middle;
+  font-size: 50px;
+  color: rgb(243, 243, 243);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+i.display {
+  opacity: 1;
+}
+header {
+  background: rgb(18, 18, 105);
+  color: rgb(243, 243, 243);
+  padding: 2vh;
+  text-align: center;
+}
